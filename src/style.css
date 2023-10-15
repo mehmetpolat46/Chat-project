@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+  min-height: 100vh;
+  font-family: "poppins";
+  z-index: 11111111;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #2d2adb;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+button:hover {
+  border-color: #646cff;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.container {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.auth {
+  background: rgb(240, 216, 216);
+  color: black;
+  width: 60vw;
+  max-width: 600px;
+  height: 50vh;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+@media (max-width: 700px) {
+  .auth {
+    width: 90vw;
+  }
+}
+.auth button {
+  color: rgb(236, 245, 238);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.auth button img {
+  width: 40px;
+}
+
+.room-page {
+  background: rgb(245, 213, 213);
+  color: #1a1a1a;
+  padding: 50px 60px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  text-align: center;
+}
+.room-page input {
+  padding: 5px 10px;
+  border-radius: 8px;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.395);
+}
+.room-page button {
+  color: white;
+  transition: all 300ms;
+}
+.room-page button:hover {
+  filter: brightness(60%);
+}
+.room-page #logout {
+  background: rgb(174, 6, 40);
+}
+
+.chat {
+  background: #f7a4a4;
+  height: 70vh;
+  width: 70vw;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 800px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+@media (max-width: 650px) {
+  .chat {
+    width: 100vw;
+    height: 100vh;
+    border-radius: 0px;
+  }
+}
+
+.chat header {
+  background: #4d4c7d;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+.chat header p {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.chat header .user {
+  font-weight: normal;
+  text-transform: none;
+}
+.chat header button {
+  background: #711d79;
+  color: #f5f5f5;
+}
+
+.chat form {
+  display: flex;
+  justify-content: center;
+  background: #9090c4;
+  padding: 10px;
+  gap: 20px;
+}
+.chat form input {
+  width: 50%;
+  border-radius: 10px;
+  border: none;
+  padding: 5px 10px;
+  font-size: 16px;
+}
+.chat form button {
+  background: #f80ec5;
+  color: white;
+}
+
+.chat main {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  overflow-y: auto;
+  color: #1a1a1a;
+  padding: 5px;
+}
+
+.msg-user {
+  align-self: end;
+  background: #804907;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 7px 7px 0 7px;
+}
+
+.msg-other {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.msg-other .user-info {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.msg-other .user-info img {
+  width: 40px;
+  border-radius: 50%;
+}
+.msg-other .user-info span {
+  font-weight: bold;
+}/*# sourceMappingURL=style.css.map */
